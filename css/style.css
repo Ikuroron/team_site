@@ -1,0 +1,100 @@
+@charset "UTF-8";
+header {
+  background-color: #E6CACA;
+  color: white;
+  font-size: 24px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+.icon {
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+  width: 50%; }
+  .icon strong {
+    font-size: 36px; }
+
+.welcome__container {
+  height: 800px;
+  width: 100%;
+  background: url(https://lovot.life/common/images/lovestory/photo_03.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.welcome__box {
+  height: 800px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: anime1 2s ease; }
+
+.welcome__title {
+  font-size: 120px;
+  color: white; }
+
+@keyframes anime1 {
+  0% {
+    opacity: 0;
+    /* 透明度指定 */
+    top: 50px;
+    /* 位置指定 */ }
+  100% {
+    opacity: 1;
+    /* 透明度指定 */
+    top: 0;
+    /* 位置指定 */ } }
+
+a {
+  text-decoration: none;
+  color: #B4DEE2; }
+
+.main__container {
+  display: grid;
+  grid-template-rows: repeat(1, 500px);
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center; }
+
+.main__item1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: #B4DEE2;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  background: url(https://orihime.orylab.com/img/orihime_top_main.png); }
+
+.main__item2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: #B4DEE2;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  background: url(https://lovot.life/common/images/lovestory/photo_07.jpg); }
+
+.main__item3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: #B4DEE2;
+  grid-row: 1/2;
+  grid-column: 3/4;
+  background: url(https://smatu.net/wp-content/uploads/2017/05/The-vintage-clock-501574346_1258x838.jpeg); }
+
+.footer__container {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #B4DEE2;
+  color: white; }
+
+.footer__right {
+  margin-right: 60px; }
