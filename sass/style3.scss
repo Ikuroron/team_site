@@ -1,0 +1,104 @@
+@import 'variables';
+
+html {
+    font-size: 62.5%;
+}
+  body {
+    font-size: 1.6em;
+}
+
+header{
+    background-color: $pink;
+    color: white;
+    font-size: 24px;
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.icon{
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+    strong{
+        font-size: 36px;
+    }
+
+}
+
+.welcome{
+    &__container{
+        height: 700px;
+        width: 100%;
+        background-image: url(../img/slide_01.jpg);
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+    &__box{
+        height: 700px;
+        width: 100%;
+        background-color: rgba(255,255,255,0.4);
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+    
+        animation: anime1 2s ease;
+    }
+
+    &__title{
+        font-size: 60px;
+        line-height: 110px;
+        background-color: rgba(1, 76, 134, .7);
+        padding: 20px 70px;
+        margin-bottom: 30px;
+        color: white;
+        
+    }
+    
+    @keyframes anime1 {
+        0% {
+            opacity:  0;                /* 透明度指定 */
+            top: 50px;                  /* 位置指定 */
+        }
+        100% {
+            opacity:  1;                /* 透明度指定 */
+            top: 0;                     /* 位置指定 */
+        }
+    }
+      
+    
+}
+
+.main {
+    &__container {
+        background-color: $blue;
+    }
+
+    &__item {
+        margin-left: 60px;
+        margin-right: 60px;
+        padding-bottom: 30px;
+    }
+
+    &__item-h2 {
+        padding-top: 30px;
+        margin-bottom: 30px;
+        font-size: 50px;
+        color: white;
+    }
+
+    &__p {
+        color: white;
+        font-size: 30px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
