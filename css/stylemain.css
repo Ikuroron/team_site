@@ -1,4 +1,10 @@
 @charset "UTF-8";
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6em; }
+
 header {
   background-color: #E6CACA;
   color: white;

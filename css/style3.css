@@ -1,4 +1,10 @@
 @charset "UTF-8";
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6em; }
+
 header {
   background-color: #E6CACA;
   color: white;
@@ -17,14 +23,14 @@ header {
     font-size: 36px; }
 
 .welcome__container {
-  height: 800px;
+  height: 700px;
   width: 100%;
-  background: url(https://image.itmedia.co.jp/news/articles/2005/14/ts0514_orihime01.jpg);
+  background-image: url(../img/slide_01.jpg);
   background-size: cover;
   background-position: center; }
 
 .welcome__box {
-  height: 800px;
+  height: 700px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.4);
   display: flex;
@@ -33,7 +39,11 @@ header {
   animation: anime1 2s ease; }
 
 .welcome__title {
-  font-size: 80px;
+  font-size: 60px;
+  line-height: 110px;
+  background-color: rgba(1, 76, 134, 0.7);
+  padding: 20px 70px;
+  margin-bottom: 30px;
   color: white; }
 
 @keyframes anime1 {
