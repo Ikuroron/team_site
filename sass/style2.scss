@@ -3,14 +3,15 @@
 html {
     font-size: 62.5%;
 }
-  body {
+body {
     font-size: 1.6em;
 }
+
+
 
 header{
     background-color: $pink;
     color: white;
-    font-size: 24px;
     height: 100px;
     width: 100%;
     display: flex;
@@ -24,9 +25,8 @@ header{
     width: 50%;
 
     strong{
-        font-size: 36px;
+        font-size: 3rem;
     }
-
 }
 
 .welcome{
@@ -36,7 +36,6 @@ header{
         background-image: url(../img/robocafe.jpg);
         background-size: cover;
         background-position: center;
-        
     }
 
     &__box{
@@ -51,13 +50,16 @@ header{
     }
 
     &__title{
-        font-size: 60px;
-        line-height: 110px;
+        font-size: 5.5rem;
+        line-height: 10rem;
         background-color: rgba(1, 76, 134, .7);
-        padding: 10px 30px;
+        padding: 10px 40px;
         margin-bottom: 30px;
         color: white;
-        
+    }
+
+    &__title-deco {
+        background: linear-gradient(transparent 70%, rgba(252,238,33, 0.8) 0%);
     }
     
     @keyframes anime1 {
@@ -70,15 +72,11 @@ header{
             top: 0;                     /* 位置指定 */
         }
     }
-      
-    
 }
 
-.main {
-    // &__container {
-    //     background-color: $blue;
-    // }
 
+
+.main {
     &__1,
     &__2 {
         height: 700px;
@@ -100,27 +98,23 @@ header{
 
     &__item-text {
         width: 100%;
-        line-height: 30px;
+        line-height: 3.5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: rgba(255, 255, 255, 0.5);
-
     }
 
     &__item-h3 {
-        font-size: 30px;
+        font-size: 4rem;
         margin-top: 70px;
         margin-bottom: 50px;
     }
 
     &__p {
         width: 85%;
-        font-size: 15px;
-        margin-bottom: 70px;
-        padding-bottom: 70px;
-
+        font-size: 2rem;
     }
 
     &__img {
@@ -143,12 +137,11 @@ header{
         justify-content: center;
         align-items: center;
         background-color: rgba(255,255,255,0.4);
-
     }
 
     &__3item-text {
         width: 100%;
-        line-height: 30px;
+        line-height: 3rem;
         display: flex;
         flex-direction: column;
         justify-content: start;

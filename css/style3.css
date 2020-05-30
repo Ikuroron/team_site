@@ -8,7 +8,6 @@ body {
 header {
   background-color: #E6CACA;
   color: white;
-  font-size: 24px;
   height: 100px;
   width: 100%;
   display: flex;
@@ -20,7 +19,7 @@ header {
   align-items: center;
   width: 50%; }
   .icon strong {
-    font-size: 36px; }
+    font-size: 3rem; }
 
 .welcome__container {
   height: 700px;
@@ -39,12 +38,15 @@ header {
   animation: anime1 2s ease; }
 
 .welcome__title {
-  font-size: 60px;
-  line-height: 110px;
+  font-size: 5.5rem;
+  line-height: 10rem;
   background-color: rgba(1, 76, 134, 0.7);
-  padding: 10px 30px;
-  margin-bottom: 30px;
+  padding: 10px 40px;
+  margin-bottom: 100px;
   color: white; }
+
+.welcome__title-deco {
+  background: linear-gradient(transparent 70%, rgba(252, 238, 33, 0.8) 0%); }
 
 @keyframes anime1 {
   0% {
@@ -75,20 +77,20 @@ header {
 
 .main__item-text {
   width: 100%;
-  line-height: 30px;
+  line-height: 3.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
 
 .main__item-h3 {
-  font-size: 30px;
+  font-size: 4rem;
   margin-top: 70px;
   margin-bottom: 50px; }
 
 .main__p {
   width: 85%;
-  font-size: 15px; }
+  font-size: 2rem; }
 
 .main__img {
   width: 45%;
@@ -110,13 +112,15 @@ header {
 
 .main__3item-text {
   width: 100%;
-  line-height: 30px;
+  line-height: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 50px 80px; }
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 80px; }
 
 .footer__container {
   height: 50px;
