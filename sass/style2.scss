@@ -13,11 +13,8 @@ header{
     font-size: 24px;
     height: 100px;
     width: 100%;
-
     display: flex;
     justify-content: space-between;
-
-    
 }
 
 .icon{
@@ -34,20 +31,18 @@ header{
 
 .welcome{
     &__container{
-        height: 800px;
+        height: 750px;
         width: 100%;
-        background: url(https://image.itmedia.co.jp/news/articles/2005/14/ts0514_orihime01.jpg);
-        
+        background-image: url(../img/robocafe.jpg);
         background-size: cover;
         background-position: center;
         
     }
 
     &__box{
-        height: 800px;
+        height: 750px;
         width: 100%;
         background-color: rgba(255,255,255,0.4);
-        
         display: flex;  
         align-items: center;
         justify-content: center;
@@ -56,7 +51,11 @@ header{
     }
 
     &__title{
-        font-size: 80px;
+        font-size: 60px;
+        line-height: 110px;
+        background-color: rgba(1, 76, 134, .7);
+        padding: 10px 30px;
+        margin-bottom: 30px;
         color: white;
         
     }
@@ -76,27 +75,99 @@ header{
 }
 
 .main {
-    &__container {
-        background-color: $blue;
+    // &__container {
+    //     background-color: $blue;
+    // }
+
+    &__1,
+    &__2 {
+        height: 700px;
+        color: rgb(144, 112, 156);
+        font-family: 'arial unicode ms';
+    }
+
+    &__back-color {
+        height: 400px;
+        padding: 4em 3em;
+        font-weight: bold;
+        border: solid 3px #E6CACA;
+        margin-top: 100px;
     }
 
     &__item {
-        margin-left: 60px;
-        margin-right: 60px;
-        padding-bottom: 30px;
+        display: flex;
     }
 
-    &__item-h2 {
-        padding-top: 30px;
-        margin-bottom: 30px;
-        font-size: 50px;
-        color: white;
+    &__item-text {
+        width: 100%;
+        line-height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.5);
+
+    }
+
+    &__item-h3 {
+        font-size: 30px;
+        margin-top: 70px;
+        margin-bottom: 50px;
     }
 
     &__p {
+        width: 85%;
+        font-size: 15px;
+    }
+
+    &__img {
+        width: 45%;
+        height: 50vh;
+        padding:20px 20px;
+        position: relative;
+    }
+
+    &__3 {
+        height: 600px;
+        background-image: url(../img/IMG_0933.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__box {
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255,255,255,0.4);
+
+    }
+
+    &__3item-text {
+        width: 100%;
+        line-height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(1, 76, 134, .7);
+        padding: 50px 80px;
+    }
+
+}
+
+.footer{
+    &__container{
+        height: 50px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: $blue;
         color: white;
-        font-size: 30px;
-        margin-right: 30px;
-        margin-left: 30px;
+    }
+
+    &__right{
+        margin-right: 60px;
     }
 }
+
